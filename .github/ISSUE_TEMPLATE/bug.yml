@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a reproducible StudyFlow defect.
+title: "[Bug] "
+labels: ["type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Include enough detail to reproduce the problem without exposing personal or study data.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem
+      description: What is broken?
+      placeholder: Describe the observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, device, and application version.
+    validations:
+      required: false
